@@ -178,6 +178,10 @@ info "Exporting binary paths"
 echo "export PATH=\"$build_dir/.heroku/node/bin:$build_dir/node_modules/.bin:\$PATH\"" > $bp_dir/export
 echo "export NODE_HOME=\"$build_dir/.heroku/node\"" >> $bp_dir/export
 
+echo "export directory"
+echo $bp_dir
+ls -la $bp_dir
+
 ####### Clean up
 
 info "Cleaning up build artifacts"
