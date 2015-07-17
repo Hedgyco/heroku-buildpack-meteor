@@ -181,6 +181,7 @@ echo "export NODE_HOME=\"$build_dir/.heroku/node\"" >> $bp_dir/export
 echo "export directory"
 echo $bp_dir
 ls -la $bp_dir
+cat $bp_dir/README.md
 
 ####### Clean up
 
