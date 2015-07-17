@@ -7,12 +7,14 @@ set -e  # fail fast
 
 ###### NEEDED VARIABLES/DIRECTORIES
 
-BUILD_DIR=$1
+#BUILD_DIR=$1
+BUILD_DIR=$1/app
 CACHE_DIR=$2
 ENV_DIR=$3
 APP_SOURCE=$BUILD_DIR/app_src
 METEOR_HOME=$BUILD_DIR/.meteor_tool
-PATH=$METEOR_HOME:$BUILD_DIR/.heroku/node/bin:$PATH
+#PATH=$METEOR_HOME:$BUILD_DIR/.heroku/node/bin:$PATH
+PATH=$METEOR_HOME:$1/.heroku/node/bin:$PATH
 bp_dir=$(cd $(dirname $0); cd ..; pwd)
 
 # Load some convenience functions like status(), echo(), and indent()
