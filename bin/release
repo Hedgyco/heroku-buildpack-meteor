@@ -6,5 +6,5 @@ BUILD_DIR=$1/app
 cat <<-YAML
 ---
 default_process_types:
-  web: cd ..; pwd;ls -la . #cd app; node build/bundle/main.js
+  web: which node; cd app; node build/bundle/main.js
 YAML
